@@ -1,0 +1,158 @@
+@import 'branding';
+
+.header-container{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.navbar{
+    border-bottom: solid 1px $title-color;
+    background-color: $secondary-color !important;
+    font-family: $font-text !important;
+    font-weight: 400 !important;
+}
+
+.navbar-brand{
+    padding: 0 !important;
+}
+
+.nav-link{
+    color:$title-color !important;
+
+    &:hover{
+        color: $hover !important;
+    }
+}
+
+
+.logo{
+    margin-right: 0 !important;
+}
+
+.navbar-toggler{
+    border:none !important;
+    padding: 0 !important;
+    margin-left: 8px;
+
+    &:focus{
+        box-shadow: none !important;
+    }
+}
+
+.btn-header, .btn-header-mobile{
+    @extend %btn;
+    padding: 10px 15px 10px 15px;
+
+    &:hover {
+        background-color: $hover;
+    }
+
+    &:active{
+        background-color: $text-color;
+    }
+}
+
+.btn-header{
+    margin-left:20px;
+}
+
+/*mobile*/
+
+@media screen and (max-width: 600px) {
+    
+    .header-container{
+        max-width: 90%;
+    }
+
+    .navbar{
+        padding: 13px 0 13px 0 !important;
+    }
+
+    .btn-header{
+        display: none !important;
+    }
+
+    .btn-header-mobile{
+        font-size: 14px;
+    }
+    
+    .navbar-nav{
+        margin:20px 0 10px 0 !important;
+    }
+
+    .nav-desktop{
+        display: none; /* qui nascondiamo il menu desktop*/
+    }
+
+    .nav-link{
+        font-size:17px !important;
+    }
+
+}
+
+/*tablet*/
+
+@media screen and (max-width: 1025px) and (min-width:601px) {
+    
+    .btn-header{
+        display: none !important;
+    }
+
+    .header-container{
+        max-width: 85% !important;
+    }
+
+    .navbar{
+        padding: 16px 0 16px 0 !important;
+    }
+
+
+    .navbar-nav{
+        margin:20px 0 10px 0 !important;
+    }
+
+    .nav-desktop{
+        display: none; /* qui nascondiamo il menu desktop*/
+    }
+
+    .nav-link{
+        font-size:18px !important;
+    }
+        
+
+}
+
+/*desktop*/
+
+@media screen and (min-width: 1026px) {
+
+    .header-container{
+        max-width: 1200px !important;
+        min-width: 1200px !important;
+    }
+
+    .navbar{
+        padding: 15px 0 15px 0 !important;
+    }
+
+    .navbar-nav{
+        align-items: center;
+    }
+
+    .nav-mobile{
+        display: none; /* qui nascondiamo il menu con chiusura automatica della versione mobile*/
+    }
+
+    .nav-link{
+        font-size:18px !important;
+    }
+
+    .btn-header-mobile{
+        display: none !important;
+    }
+
+    .btn-header{
+        font-size: 18px !important;
+    }
+
+}
