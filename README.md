@@ -1,3 +1,7 @@
 <h1>Il mio portfolio</h1>
-<p>In questo progetto mostro le mie abilità in materia di HTML e CSS, dato che sono state necessarie per realizzarlo.</p>
-<p>Inoltre mostro allo stesso tempo chi sono, le mie skills (in aggiornamento) e i miei progetti (in aggiornamento.).</p>
+<p>Questo è il primo progetto svolto per il Master in Full Stack Development di Start2impact.</p>
+<p>Gli obiettivi del progetto sono:</p>
+<ul>
+  <li>Mostrare le mie abilità in materia di HTML e CSS, dato che sono state necessarie proprio per realizzarlo.</li>
+  <li>Sfruttare il progetto come portfolio personale in cui spiego brevemente chi sono, le mie skills (in aggiornamento) e i miei progetti realizzati o in corso.</li>
+</ul>
