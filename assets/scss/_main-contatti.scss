@@ -1,12 +1,11 @@
 @import 'branding';
 
 .contact-body{
-    background-color: $secondary-color;
+    background-color: $primary-color;
     font-family: $font-text;
 }
 
 .contact-page{
-    background-color: $primary-color;
     padding-top: 40px;
 }
 
@@ -108,14 +107,21 @@
 
  @media screen and (max-width: 1025px) and (min-width:601px) {
 
+  .contact-body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+    .contact-page{
+       padding-top: 50px;
+       flex-grow: 1;
+     }
+
     .contact{
         display: flex;
         justify-content: center;
      }
-
-    .contact-page{
-        padding-top: 50px;
-    }
 
       /*form*/
 
@@ -153,14 +159,21 @@
 
  @media screen and (min-width:1026px) {
 
+    .contact-body{
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+     .contact-page{
+        padding-top: 60px;
+        flex-grow: 1;
+    }
+
     .contact{
         display: flex;
         justify-content: center;
      }
-
-     .contact-page{
-        padding-top: 60px;
-    }
 
       /*form*/
 

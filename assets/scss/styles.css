@@ -559,12 +559,11 @@
 }
 
 .contact-body {
-  background-color: #FFFCFA;
+  background-color: #FFF5EF;
   font-family: "Inter", sans-serif;
 }
 
 .contact-page {
-  background-color: #FFF5EF;
   padding-top: 40px;
 }
 
@@ -660,12 +659,18 @@ label:first-of-type {
 
 /*tablet*/
 @media screen and (max-width: 1025px) and (min-width: 601px) {
-  .contact {
+  .contact-body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
   }
   .contact-page {
     padding-top: 50px;
+    flex-grow: 1;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
   }
   /*form*/
   .contact-form-container {
@@ -693,12 +698,18 @@ label:first-of-type {
 }
 /*desktop*/
 @media screen and (min-width: 1026px) {
-  .contact {
+  .contact-body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh;
   }
   .contact-page {
     padding-top: 60px;
+    flex-grow: 1;
+  }
+  .contact {
+    display: flex;
+    justify-content: center;
   }
   /*form*/
   .contact-form-container {
