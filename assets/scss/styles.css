@@ -760,11 +760,6 @@ label:first-of-type {
   padding: 0;
 }
 
-.footer {
-  display: flex;
-  justify-content: center;
-}
-
 .footer-container {
   display: flex;
   flex-direction: column;
